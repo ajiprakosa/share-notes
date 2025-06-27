@@ -1,0 +1,58 @@
+Build a modern and mobile-friendly property listing website using this API endpoint:
+https://dplistingapi.netlify.app/listings (supports ?page= and ?limit= query params).
+
+Each property listing object includes the following fields:
+
+listingIdStr: string – use this as a unique ID (for detail navigation)
+
+address: string – location/address of the property
+
+price: number – display in formatted currency
+
+description: string – short text about the listing
+
+cityName: string – city location
+
+lotSize: number – size of the land (if available)
+
+propertyType: e.g. "land", "house", etc.
+
+pictureUrls: array of image URLs – use the first image as the thumbnail
+
+isVerified: boolean – show a verified badge or icon if true
+
+📄 The detail page should use the endpoint:
+https://dplistingapi.netlify.app/listings/:id (with listingIdStr)
+and show full information: description, coordinates (optional), and all images.
+
+🎨 Frontend Features:
+
+Clean grid or card-style UI for listings
+
+Responsive layout for mobile and desktop
+
+Pagination (e.g. 12 listings per page)
+
+Click to view listing detail
+
+Display "verified" badge if isVerified is true
+
+Format price with thousands separator (e.g. Rp1.000.000.000)
+
+🔎 Enhancements:
+
+Add a search filter (by address or city)
+
+Show loading states while fetching data
+
+Handle empty results or API errors
+
+Add a "Back to Top" floating button
+
+Optional: Dark mode toggle
+
+Optional: Map preview based on coordinate.latitude & longitude
+
+No user authentication needed. API is public and read-only.
+
+Use Bahasa Indonesia for all interface.
