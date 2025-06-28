@@ -1,5 +1,13 @@
 Build a modern and mobile-friendly property listing website using this API endpoint:
+
 https://dplistingapi.netlify.app/listings (supports ?page= and ?limit= query params).
+API Structure
+{
+  "total": 3943,
+  "page": 1,
+  "limit": 12,
+  "data": [...]
+}
 
 Each property listing object includes the following fields:
 
@@ -22,6 +30,7 @@ pictureUrls: array of image URLs – use the first image as the thumbnail
 isVerified: boolean – show a verified badge or icon if true
 
 📄 The detail page should use the endpoint:
+
 https://dplistingapi.netlify.app/listings/:id (with listingIdStr)
 and show full information: description, coordinates (optional), and all images.
 
